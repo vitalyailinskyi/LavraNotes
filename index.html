@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+    <details>
+    <summary><span class="title">1-я картинка на новость</span></summary>
+    <p class="text"><span class="comment">// 165px для горизонтальной, 140px для вертикальной</span></p>
+    <p class="text">Если есть фотоальбом или видео, или аудио: <span class="comment">// Если в фотоальбоме меньше 10 фото — то пишем просто "Фотоальбом"</span></p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div&gt;</span>[caption <span class="atn">class</span>=<span class="atv">"mobile-image"</span> <span class="atn">align</span>=<span class="atv">"alignleft"</span> <span class="atn">width</span>=<span class="atv">"165"</span>]<span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"b_jpg"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">class</span>=<span class="atv">"alignnone"</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">src</span>=<span class="atv">"m_jpg"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"165"</span> <span class="atn">height</span>=<span class="atv">"120"</span> <span class="atn">border</span>=<span class="atv">"0"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span> ### фото [/caption]<span class="tag">&lt;/div&gt;</span></pre>
+    </div>
+    <p class="text">Если одна картинка:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div&gt;</span><span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"b_jpg"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">class</span>=<span class="atv">"mobile-image alignleft"</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">src</span>=<span class="atv">"m_jpg"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"165"</span> <span class="atn">height</span>=<span class="atv">"120"</span> <span class="atn">border</span>=<span class="atv">"0"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/div&gt;</span></pre>
+    </div>
+    </details>
+
+<details>
+    <summary><span class="title">Фотоальбомы</span></summary>
+    
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent: 3.7%;"</span><span class="tag">&gt;</span><span class="tag">&lt;em&gt;</span><span class="tag">&lt;strong&gt;</span>Фотоальбом на<span class="tag">&lt;/strong&gt;</span><span class="tag">&lt;/em&gt;</span><code>&nbsp;</code>&#160;<span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://www.flickr.com/photos/svlavra/albums/72157691073831440"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">title</span>=<span class="atv">"Святогорская Лавра фото на Flickr"</span> <span class="atn">src</span>=<span class="atv">"http://svlavra.church.ua/files/2018/05/Flickr-logo-icon-1.png"</span> <span class="atn">alt</span>=<span class="atv">"Святогорская Лавра фото на Flickr"</span> <span class="atn">width</span>=<span class="atv">"65"</span> <span class="atn">height</span>=<span class="atv">"20"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/p&gt;</span>
+[flickr_set <span class="atn">id</span>=<span class="atv">"7215"</span>]</pre>
+    </div>
+
+    <p class="text">Галерея для вставки фото &lt;img&gt;, которые можно пролистывать одну за другой:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;a</span> <span class="atn">rel</span>=<span class="atv">"example_group"</span> <span class="atn">href</span>=<span class="atv">"jpg"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">src</span>=<span class="atv">"jpg"</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">border</span>=<span class="atv">"0"</span> <span class="atn">width</span>=<span class="atv">"320"</span> <span class="atn">height</span>=<span class="atv">"120"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span></pre>
+    </div>
+
+    <p class="text">Вставка галерии с другого фликра:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre>[flickr_photostream user_<span class="atn">id</span>=<span class="atv">"137349889@N08"</span> max_num_photos="1"</span> pagination="none"</span>]</pre>
+    </div>
+    <p class="text">Вставка галерии из медиафайлов сайта: <span class="comment">(у каждого есть свой ID)</span></p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre>[gallery type="rectangle"</span> ids="14188,14189,14190,14184,14185,14186,14187"</span>]</pre>
+    </div>
+
+    <p class="text">Фотоальбом из ВКонтакте:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-indent: 3.7%;text-align: justify"</span><span class="tag">&gt;</span><span class="tag">&lt;em&gt;</span><span class="tag">&lt;strong&gt;</span>Фотоальбом на<span class="tag">&lt;/strong&gt;</span><span class="tag">&lt;/em&gt;</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://vk.com/album-91037675_242363604"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">title</span>=<span class="atv">"Фотоальбом «Соборование в Адамовке» ВКонтакте"</span> <span class="atn">src</span>=<span class="atv">"http://svlavra.church.ua/files/2016/05/vk.png"</span> <span class="atn">alt</span>=<span class="atv">"Фотоальбом «Соборование в Адамовке» ВКонтакте"</span> <span class="atn">width</span>=<span class="atv">"30"</span> <span class="atn">height</span>=<span class="atv">"24"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span> (Ссылка на фотоальбом <span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://vk.com/adamovka_ua"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;span <span class="atn">style</span>=<span class="atv">"color: blue"</span><span class="tag">&gt;</span>группы «Адамовка – родина свт. Иоанна Шанхайского»<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/a&gt;</span>)<span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+
+</details>
+
+<details>
+    <summary><span class="title">Видео YouTube</span></summary>
+
+    <p class="text">Вставка интерактивного видео внутрь новости:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div <span class="atn">style</span>=<span class="atv">"text-align:center; margin-bottom: 15px;"</span><span class="tag">&gt;</span>[youtube http://www.youtube.com/watch?v=E2jzBSc6K0U?rel=0&amp;w=640&amp;h=360]<span class="tag">&lt;/div&gt;</span></pre>
+    </div>
+
+    <p class="text">Вставка видео с картинкой:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div&gt;</span><span class="tag">&lt;a</span> <span class="atn">class</span>=<span class="atv">"fancybox-youtube"</span> <span class="atn">href</span>=<span class="atv">"https://www.youtube.com/watch?v=jjCDYAbQPgc?rel=0&amp;showinfo=0"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">class</span>=<span class="atv">"mobile-image aligncenter radius"</span> <span class="atn">src</span>=<span class="atv">"jpg"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"640"</span> <span class="atn">height</span>=<span class="atv">"360"</span> <span class="atn">title</span>=<span class="atv">""</span> /&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/div&gt;</span></pre>
+    </div>
+
+    <p class="text">Вставка видео с картинкой из плейлиста YouTube:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div&gt;</span><span class="tag">&lt;a</span> <span class="atn">class</span>=<span class="atv">"fancybox-youtube"</span> <span class="atn">href</span>=<span class="atv">"https://www.youtube.com/watch?v=<span class="tag">&lt;VIDEO_ID&gt;</span>&amp;list=<span class="tag">&lt;LIST_ID&gt;</span>"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">class</span>=<span class="atv">"mobile-image aligncenter"</span> <span class="atn">src</span>=<span class="atv">"jpg"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"650"</span> <span class="atn">height</span>=<span class="atv">"366"</span> <span class="atn">title</span>=<span class="atv">""</span> /&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/div&gt;</span></pre>
+    </div>
+</details>
+
+<details>
+    <summary><span class="title">Материалы по теме / Новости по метке</span></summary>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: center;margin-top: 1%;"</span><span class="tag">&gt;</span><span class="tag">&lt;strong&gt;</span>Материалы по теме:<span class="tag">&lt;/strong&gt;</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify; text-indent: 3.7%"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;strong&gt;</span><span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"http://svlavra.church.ua/2015/09/08/k-15-letiyu-osvyashheniya-uspenskogo-sobora-svyatogorskoj-lavry/"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;span <span class="atn">style</span>=<span class="atv">"color: #0000ff"</span><span class="tag">&gt;</span>—&nbsp;К 15-летию освящения Успенского собора Святогорской Лавры<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/strong&gt;</span>
+    <span class="tag">&lt;strong&gt;</span><span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"http://svlavra.church.ua/2015/09/08/xronika-osvyashheniya-uspenskogo-sobora-foto-i-videomaterialy/"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;span <span class="atn">style</span>=<span class="atv">"color: #0000ff"</span><span class="tag">&gt;</span>—&nbsp;Хроника освящения Успенского собора (фото- и видеоматериалы)<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/strong&gt;</span>
+<span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+
+    <p class="text">Вариант оформления похожих новостей по теме:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;footer <span class="atn">class</span>=<span class="atv">"entry-meta"</span><span class="tag">&gt;</span><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"margin-top: 1%;background-color: #E1F6E5"</span><span class="tag">&gt;</span>&nbsp;Похожие новости: <span class="tag">&lt;a</span> <span class="atn">style</span>=<span class="atv">"background-color: #E1F6E5"</span> <span class="atn">href</span>=<span class="atv">"https://svlavra.church.ua/mediateka/propovedi/"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span>Проповеди митрополита Арсения<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/p&gt;</span><span class="tag">&lt;/footer&gt;</span></pre>
+    </div>
+
+    <p class="text">Вариант оформления новостей по гуманитарным грузам:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;footer <span class="atn">class</span>=<span class="atv">"entry-meta"</span><span class="tag">&gt;</span><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"margin-top: 1%;background-color: #E1F6E5; padding: 10px;text-align: justify;text-indent: 3.7%;"</span><span class="tag">&gt;</span>Новости о том, как начинались рейды гуманитарной помощи: <span class="tag">&lt;a</span> <span class="atn">style</span>=<span class="atv">"background-color: #E1F6E5"</span> <span class="atn">href</span>=<span class="atv">"https://svlavra.church.ua/2015/01/28/22-tonny-gumanitarnogo-gruza-vezut-v-svyatogorskuyu-lavru-iz-vinnicy-prosim-molitv/"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span>22 тонны гуманитарного груза из Винницкой епархии<span class="tag">&lt;/a&gt;</span>, <span class="tag">&lt;a</span> <span class="atn">style</span>=<span class="atv">"background-color: #E1F6E5"</span> <span class="atn">href</span>=<span class="atv">"https://svlavra.church.ua/2015/02/10/v-vinnice-prodolzhaetsya-sbor-sredstv-produktov-i-veshhej-dlya-tretego-gumanitarnogo-rejda/"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span>В Виннице продолжается сбор средств, продуктов и вещей для третьего гуманитарного рейда<span class="tag">&lt;/a&gt;</span>, <span class="tag">&lt;a</span> <span class="atn">style</span>=<span class="atv">"background-color: #E1F6E5"</span> <span class="atn">href</span>=<span class="atv">"https://svlavra.church.ua/2015/03/19/tretij-rejd-iz-vinnicy-s-gumanitarnym-gruzom-dlya-bezhencev/"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span>Третий рейд из Винницы с гуманитарным грузом для беженцев<span class="tag">&lt;/a&gt;</span>, <span class="tag">&lt;a</span> <span class="atn">style</span>=<span class="atv">"background-color: #E1F6E5"</span> <span class="atn">href</span>=<span class="atv">"https://svlavra.church.ua/2015/04/29/pomoshh-bezhencam-gde-beretsya-i-kuda-devaetsya/"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span>Помощь беженцам: где берется и куда девается<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/p&gt;</span><span class="tag">&lt;/footer&gt;</span></pre>
+    </div>
+
+    <p class="text">Вариант оформления новостей по метке:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"margin-top: -1.3%;background-color: #F2F2F2"</span><span class="tag">&gt;</span>&nbsp;Новости по метке: <span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://svlavra.church.ua/tag/gumanitarnaya-pomoshh/"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span>Гуманитарная помощь<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/footer&gt;</span></pre>
+    </div>
+
+
+    
+</details>
+    
+<details>
+    <summary><span class="title">Аудио</span></summary>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"http://svlavra.church.ua/files/2015/08/2015_08_24-прп.-Иоанна-Затворника-64.mp3"</span><span class="tag">&gt;</span>Проповедь митрополита Арсения в день памяти прп.&nbsp;Иоанна Затворника. 24&nbsp;августа&nbsp;2015&nbsp;г.<span class="tag">&lt;/a&gt;</span>
+[audio mp3="http://svlavra.church.ua/files/2015/08/2015_08_24-прп.-Иоанна-Затворника-64.mp3"</span>][/audio]</pre>
+    </div>
+</details>
+
+
+<details>
+    <summary><span class="title">Читайте наши новости в Тelegram / Viber</span></summary>
+    <p class="text">Telegram:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent: 3.7%"</span><span class="tag">&gt;</span>Читайте наши новости в <span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://t.me/svlavra"</span><span class="tag">&gt;</span><span class="tag">&lt;span <span class="atn">style</span>=<span class="atv">"color: blue"</span><span class="tag">&gt;</span>Тelegram<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/a&gt;</span> <span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://t.me/svlavra"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">style</span>=<span class="atv">"vertical-align: middle"</span> <span class="atn">title</span>=<span class="atv">"Telegram «Святогорская Лавра»"</span> <span class="atn">src</span>=<span class="atv">"http://svyatlavra.church.ua/files/2018/05/telegram-logo.png"</span> <span class="atn">alt</span>=<span class="atv">"Telegram «Святогорская Лавра»"</span> <span class="atn">width</span>=<span class="atv">"40"</span> <span class="atn">height</span>=<span class="atv">"40"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+
+    <p class="text">Telegram и Viber:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: center;margin-top: 1%"</span><span class="tag">&gt;</span><span class="tag">&lt;em&gt;</span>Читайте наши новости в:<span class="tag">&lt;br /&gt;</span><span class="tag">&lt;strong&gt;</span><span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://t.me/svlavra"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">class</span>=<span class="atv">"wp-image-187637"</span> <span class="atn">src</span>=<span class="atv">"http://svlavra.church.ua/files/2018/05/telegram-logo.png"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"34"</span> <span class="atn">height</span>=<span class="atv">"34"</span><span class="tag">&gt;</span>&thinsp;<span class="tag">&lt;span&gt;</span>Тelegram<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/strong&gt;</span> и <span class="tag">&lt;strong&gt;</span><span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://tinyurl.com/y2zsprnm"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">class</span>=<span class="atv">"wp-image-187637"</span> <span class="atn">src</span>=<span class="atv">"http://svlavra.church.ua/files/2018/05/viber-logo.png"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"34"</span> <span class="atn">height</span>=<span class="atv">"34"</span><span class="tag">&gt;</span>&thinsp;<span class="tag">&lt;span <span class="atn">style</span>=<span class="atv">"color:#7c519b"</span><span class="tag">&gt;</span>Viber<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/strong&gt;</span><span class="tag">&lt;/em&gt;</span><span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+</details>
+
+<details>
+    <summary><span class="title">ПЕРЕПОСТ НОВОСТИ</span></summary>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div&gt;</span><span class="tag">&lt;a</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">href</span>=<span class="atv">"ССЫЛКА_НА_СТРАНИЦУ"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">class</span>=<span class="atv">"mobile-image alignleft"</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">src</span>=<span class="atv">"ССЫЛКА_НА_КАРТИНКУ"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"165"</span> <span class="atn">height</span>=<span class="atv">"120"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent:3.7%"</span><span class="tag">&gt;</span><span class="tag">&lt;a</span> <span class="atn">style</span>=<span class="atv">"color: black;text-decoration:default black"</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">href</span>=<span class="atv">"ССЫЛКА_НА_СТРАНИЦУ"</span><span class="tag">&gt;</span>Текст превью новости-перепоста<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;!--more--&gt;</span></pre>
+    </div>
+</details>
+
+<details>
+    <summary><span class="title">ПЕРЕПОСТ НОВОСТИ (АУДИО, ВИДЕО)</span></summary>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div&gt;</span>[caption <span class="atn">class</span>=<span class="atv">"mobile-image"</span> <span class="atn">align</span>=<span class="atv">"alignleft"</span> <span class="atn">width</span>=<span class="atv">"165"</span>]<span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"ССЫЛКА_НА_СТРАНИЦУ"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">class</span>=<span class="atv">"alignnone"</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">src</span>=<span class="atv">"ССЫЛКА_НА_КАРТИНКУ"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"165"</span> <span class="atn">height</span>=<span class="atv">"120"</span> <span class="atn">border</span>=<span class="atv">"0"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span> аудио / видео [/caption]<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent:3.7%"</span><span class="tag">&gt;</span><span class="tag">&lt;a</span> <span class="atn">style</span>=<span class="atv">"color: black;text-decoration:default black"</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">href</span>=<span class="atv">"ССЫЛКА_НА_СТРАНИЦУ"</span><span class="tag">&gt;</span>Текст превью новости-перепоста<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;!--more--&gt;</span></pre>
+    </div>
+</details>
+
+<details>
+    <summary><span class="title">Историческая справка</span></summary>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;blockquote <span class="atn">style</span>=<span class="atv">"font-size: 13pt;"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: center;"</span><span class="tag">&gt;</span><span class="tag">&lt;u&gt;</span>Историческая справка:<span class="tag">&lt;/u&gt;</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/blockquote&gt;</span></pre>
+    </div>
+</details>
+
+
+
+<details>
+    <summary><span class="title">УПЦ, ССЫЛКА В ТЕКСТЕ НА ДРУГУЮ СТРАНИЦУ</span></summary>
+    <p class="text"><span class="comment">// адрес указывать в "", здесь href=""</span></p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">""</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;span <span class="atn">style</span>=<span class="atv">"color: blue;"</span><span class="tag">&gt;</span><span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">""</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;/a&gt;</span></pre>
+    </div>
+
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent: 3.7%"</span><span class="tag">&gt;</span>По материалам <span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">""</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span>официального сайта УПЦ<span class="tag">&lt;/a&gt;</span>.<span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-indent: 3.7%;text-align: justify"</span><span class="tag">&gt;</span><span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"http://svlavra.church.ua/slovo-mitropolita-arseniya-v-den-pobedy-9-maya-2014-g-2/"</span><span class="tag">&gt;</span><span class="tag">&lt;span <span class="atn">style</span>=<span class="atv">"color: blue"</span><span class="tag">&gt;</span>Текст проповеди<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/a&gt;</span> можно прочтитать здесь.<span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+
+</details>
+
+
+<details>
+    <summary><span class="title">АУДИОНОВОСТЬ</span></summary>
+    
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div&gt;</span><span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"XL_jpg"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">class</span>=<span class="atv">"mobile-image alignleft"</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">src</span>=<span class="atv">"M_jpg"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"140"</span> <span class="atn">height</span>=<span class="atv">"100"</span> <span class="atn">border</span>=<span class="atv">"0"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent: 3.7%"</span><span class="tag">&gt;</span>Содержание проповеди...<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"http://svlavra.church.ua/files/2016/05/Неделя-6-я-по-Пасхе-о-Патр.-Ермогене.-25-мая-2014-г.mp3"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span>Проповедь архиепископа Арсения в день памяти патриарха священномученика Ермогена. 25 мая&nbsp;2014&nbsp;г.<span class="tag">&lt;/a&gt;</span>
+[audio mp3="http://svlavra.church.ua/files/2016/05/Неделя-6-я-по-Пасхе-о-Патр.-Ермогене.-25-мая-2014-г.mp3"</span>][/audio]</pre>
+    </div>
+</details>
+
+<details>
+    <summary><span class="title">МУЛЬТИМЕДИЙНЫЙ КАЛЕНДАРЬ</span></summary>
+    <p class="text">Текст плюс картинка</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div <span class="atn">style</span>=<span class="atv">"margin-top: 0%;text-align: center"</span><span class="tag">&gt;</span>Мультимедийный календарь представляет собой краткое освещение основных праздников и событий на предстоящую седмицу в Святогорской Лавре
+<span class="tag">&lt;a</span> <span class="atn">class</span>=<span class="atv">"fancybox-youtube"</span> <span class="atn">href</span>=<span class="atv">"https://youtu.be/eiUo8TTur3o?list=PL6JZVtO9RWcWERXQuyVRYdFEuF-zdJQnH"</span> <span class="atn">target</span>=<span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="tag">&lt;img <span class="atn">style</span>=<span class="atv">"margin-top: 1.5%"</span> <span class="atn">class</span>=<span class="atv">"aligncenter"</span> <span class="atn">title</span>=<span class="atv">""</span> <span class="atn">src</span>=<span class="atv">"11111111111"</span> <span class="atn">alt</span>=<span class="atv">""</span> <span class="atn">width</span>=<span class="atv">"650"</span> <span class="atn">height</span>=<span class="atv">"366"</span> /&gt;</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/div&gt;</span></pre>
+    </div>
+    <p class="text">Текст и фрейм с видео</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: center"</span><span class="tag">&gt;</span>Мультимедийный календарь представляет собой краткое освещение основных праздников и событий на предстоящую седмицу в Святогорской Лавре
+[youtube http://www.youtube.com/watch?v=E2jzBSc6K0U?rel=0&amp;showinfo=0&amp;w=560&amp;h=315]<span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+</details>
+
+<details>
+    <summary><span class="title">Заголовки H1,H2 с помощью стилей</span></summary>
+    <p class="text">Заголовок H1 с помощью стилей</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;div <span class="atn">style</span>=<span class="atv">"text-align:center; margin-bottom: 2%;"</span><span class="tag">&gt;</span><span class="tag">&lt;span <span class="atn">style</span>=<span class="atv">"font-family: Open Sans Condensed;font-size: 3.495em;line-height: 1;"</span><span class="tag">&gt;</span>Ноты:<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/div&gt;</span></pre>
+    </div>
+    <p class="text">Заголовок H2 с помощью стилей</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;span <span class="atn">style</span>=<span class="atv">"font-family: Georgia;font-size: 2rem;line-height: 1.05;margin-bottom: 0.15em;padding-top: .85em"</span><span class="tag">&gt;</span>➠ 1. Житие<span class="tag">&lt;/span&gt;</span></pre>
+    </div>
+</details>
+
+<details>
+    <summary><span class="title">Якорь на ссылку в тексте, сноски в конце текста, список источников</span></summary>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;!---Якорь на ссылку в тексте---&gt;</span>  <span class="tag">&lt;a</span> name="Rozhdestvo"</span><span class="tag">&gt;</span><span class="tag">&lt;/a&gt;</span>     <span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"http://svlavra.church.ua/bratskij-xor/#svyatih_gor_ykrashenie"</span><span class="tag">&gt;</span><span class="tag">&lt;/a&gt;</span></pre>
+    </div>
+    <p class="text"><span class="comment">ver. 2022 (padding-top: 1.4em) - нужен, потому что на сайте вверху прикреплено меню. (на 1.4 строки). И именно id, а не name!</span></p>
+    <p class="text">В тексте:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre>Текст_без_пробела_вставляем_сноску<span class="tag">&lt;a</span> <span class="atn">style</span>=<span class="atv">"padding-top: 1.4em"</span> <span class="atn">href</span>=<span class="atv">"#_end1"</span> <span class="atn">id</span>=<span class="atv">"_endref1"</span><span class="tag">&gt;</span>[1]<span class="tag">&lt;/a&gt;</span></pre>
+    </div>
+    <p class="text">В конце:</p>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent: 3.7%"</span><span class="tag">&gt;</span><span class="tag">&lt;a</span> <span class="atn">style</span>=<span class="atv">"padding-top: 1.4em"</span> <span class="atn">href</span>=<span class="atv">"#_endref1"</span> <span class="atn">id</span>=<span class="atv">"_end1"</span><span class="tag">&gt;</span>[1]<span class="tag">&lt;/a&gt;</span> Заменить_текст_на_другой.<span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+    <p class="text"><span class="comment">ВАЖНО! Если сноска <span class="tag">&lt;a&gt;</span> находится не внутри абзаца <span class="tag">&lt;p&gt;</span>, то она будет проблематично кликабельна из-за padding-top, поэтому обязательно оборачиваем ссылку в тег абзаца <span class="tag">&lt;p&gt;</span>.</span></p>
+</details>
+
+<details>
+    <summary><span class="title">Расписание богослужений</span></summary>
+    <p class="text">Для выравнивания расписания богослужений:</p>
+    <div class="code">
+        <pre>3 (обычный) Отступ 8.5  &amp;emsp;&amp;ensp;&amp;ensp;&amp;thinsp;
+3 (жирный)  Отступ 6.5  &amp;emsp;&amp;ensp;&amp;thinsp;
+4 (обычный) Отступ 6    &amp;emsp;&amp;ensp;
+4 (жирный)  Отступ 4    &amp;emsp;</pre>
+    </div>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</pre>
+    </div>
+
+    <p class="text">Замена с помощью регурярных выражений:</p>
+    <p class="text">3 (обычный): <span class="comment">(\d\d\/\d)---- = ($1)&amp;emsp;&amp;ensp;&amp;ensp;&amp;thinsp;</span></p>
+    <div class="inline-code">
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre>(\d\d\/\d)----</pre>
+        </div>
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre>($1)&amp;emsp;&amp;ensp;&amp;ensp;&amp;thinsp;</pre>
+        </div>
+    </div>
+    <p class="text">3 (обычный): <span class="comment">([^\d]\d\/\d\d)---- = ($1)&amp;emsp;&amp;ensp;&amp;ensp;&amp;thinsp;</span></p>
+    <div class="inline-code">
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre>([^\d]\d\/\d\d)----</pre>
+        </div>
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre>($1)&amp;emsp;&amp;ensp;&amp;ensp;&amp;thinsp;</pre>
+        </div>
+    </div>
+    <p class="text">3 (жирный): <span class="comment"><span class="tag">&lt;strong&gt;</span>(\d\d\/\d)<span class="tag">&lt;/strong&gt;</span>---- = <span class="tag">&lt;strong&gt;</span>($1)<span class="tag">&lt;/strong&gt;</span>&amp;emsp;&amp;ensp;&amp;thinsp;</span></p>
+    <div class="inline-code">
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre><span class="tag">&lt;strong&gt;</span>(\d\d\/\d)<span class="tag">&lt;/strong&gt;</span>----</pre>
+        </div>
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre><span class="tag">&lt;strong&gt;</span>($1)<span class="tag">&lt;/strong&gt;</span>&amp;emsp;&amp;ensp;&amp;thinsp;</pre>
+        </div>
+    </div>
+    <p class="text">3 (жирный): <span class="comment"><span class="tag">&lt;strong&gt;</span>(\d\d\/\d)<span class="tag">&lt;/strong&gt;</span>---- = <span class="tag">&lt;strong&gt;</span>($1)<span class="tag">&lt;/strong&gt;</span>&amp;emsp;&amp;ensp;&amp;thinsp;</span></p>
+    <div class="inline-code">
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre><span class="tag">&lt;strong&gt;</span>(\d\d\/\d)<span class="tag">&lt;/strong&gt;</span>----</pre>
+        </div>
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre><span class="tag">&lt;strong&gt;</span>($1)<span class="tag">&lt;/strong&gt;</span>&amp;emsp;&amp;ensp;&amp;thinsp;</pre>
+        </div>
+    </div>
+
+
+    <p class="text">4 (обычный): <span class="comment">(\d\d\/\d\d)---- = ($1)&amp;emsp;&amp;ensp;</span></p>
+    <div class="inline-code">
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre>(\d\d\/\d\d)----</pre>
+        </div>
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre>($1)&amp;emsp;&amp;ensp;</pre>
+        </div>
+    </div>
+
+    <p class="text">4 (жирный): <span class="comment"><span class="tag">&lt;strong&gt;</span>(\d\d\/\d\d)<span class="tag">&lt;/strong&gt;</span>---- = <span class="tag">&lt;strong&gt;</span>($1)<span class="tag">&lt;/strong&gt;</span>&amp;emsp;</span></p>
+    <div class="inline-code">
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre><span class="tag">&lt;strong&gt;</span>(\d\d\/\d\d)<span class="tag">&lt;/strong&gt;</span>----</pre>
+        </div>
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre><span class="tag">&lt;strong&gt;</span>($1)<span class="tag">&lt;/strong&gt;</span>&amp;emsp;</pre>
+        </div>
+    </div>
+    <hr />
+
+    <p class="text">Для публикации расписания богослужений в соц. сетях <span class="comment">(ОТСТУПЫ ОТ ЦИФР ДАТЫ)</span></p>
+    <div class="inline-code">
+        <p><span>Для 3 цифр:</span></p>
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre>  </pre>
+        </div>
+        <p><span>Для 4 цифр:</span></p>
+        <div class="code">
+            <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+            <pre> </pre>
+        </div>    
+    
+    
+</details>
+
+<details>
+    <summary><span class="title">Типы пробелов в html-тексте</span></summary>
+    <div class="code">
+        <pre>&amp;emsp; - 4 пробела
+&amp;ensp; - 2 пробела
+&amp;nbsp; - 1 пробел
+&amp;thinsp; - 0,5 пробела
+<span style="background:aquamarine"> </span> - жёстко-неразрывный пробел (не растягивается)</pre>
+    </div>
+</details>
+
+<details>
+    <summary><span class="title">Материалы по делу митр. Арсения</span></summary>
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent: 3.7%"</span><span class="tag">&gt;</span><span class="tag">&lt;em&gt;</span>Інші матеріали у кримінальній справі відносно митрополита Арсенія читайте за <span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://svlavra.church.ua/tag/sprava-mitr-arseniya/"</span><span class="tag">&gt;</span>посиланням<span class="tag">&lt;/a&gt;</span>.<span class="tag">&lt;/em&gt;</span><span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+
+    <div class="code">
+        <button type="button" class="copy-icon" onclick="copyText(this)"><img src="img/copy.svg" class="icon"></button>
+        <pre><span class="tag">&lt;p</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent: 3.7%"</span><span class="tag">&gt;</span><span class="tag">&lt;em&gt;</span>Другие материалы по уголовному делу в отношении митрополита Арсения читайте <span class="tag">&lt;a</span> <span class="atn">href</span>=<span class="atv">"https://svlavra.church.ua/ru/tag/delo-mitr-arseniya/"</span><span class="tag">&gt;</span><span class="tag">&lt;strong&gt;</span>по ссылке<span class="tag">&lt;/strong&gt;</span><span class="tag">&lt;/a&gt;</span>.<span class="tag">&lt;/em&gt;</span><span class="tag">&lt;/p&gt;</span></pre>
+    </div>
+
+</details>
+
+
+<details>
+    <summary><span class="title">Дополнительные материалы</span></summary>
+    <div class="code">
+        <pre>а́ ударение &amp;#769;</pre>
+    </div>
+
+    <div class="code">
+        <pre><span class="tag">&lt;div <span class="atn">id</span>=<span class="atv">"material_text"</span> <span class="atn">style</span>=<span class="atv">"text-align: justify;text-indent:3.7%;"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span></pre>
+    </div>
+
+    <div class="code">
+        <pre><span class="tag">&lt;div <span class="atn">class</span>=<span class="atv">"info"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p</span> <span class="atn">class</span>=<span class="atv">"ListParagraph"</span><span class="tag">&gt;</span>Строки&nbsp;<span class="tag">&lt;em&gt;</span>Shell =<span class="tag">&lt;/em&gt;</span> и&nbsp;<span class="tag">&lt;em&gt;</span>Install_Path =<span class="tag">&lt;/em&gt;</span> могут отличаться, в зависимости от модели накопителя и версии микропрограммы.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+    </div>
+
+
+    <div class="code">
+        <pre>https://www.youtube.com/channel/UCZ8xSa5ceifaA5hVIIXzq-g?sub_confirmation=1</pre>
+    </div>
+    
+    <p class="text">Новости по 2+ тегам одновременно на сайте:</p>
+    <div class="code">
+        <pre>https://svlavra.church.ua/ru/?tag=mitropolit-arsenij+teksty-propovedej</pre>
+    </div>
+    <p class="text">Новости по тегам и категориям одновременно на сайте:</p>
+    <div class="code">
+        <pre>https://svlavra.church.ua/ru/?tag=mitropolit-arsenij&category_name=propovedi</pre>
+    </div>
+    <div class="code">
+        <pre>https://svlavra.church.ua/category/news/?tag=krestnyj-xod+svyatogorskaya-ikona&category_name=general-church-news+svyatogorsk-lavra-news</pre>
+    </div>
+
+    <p class="text">Просмотр и скачаивание файлов с Google диска:</p>
+    <div class="code">
+        <pre>https://drive.google.com/file/d/1mru6c-N75zZhlWUBoJOXFahrMYAMfAnS/view</pre>
+    </div>
+    <div class="code">
+        <pre>https://drive.google.com/u/0/uc?id=1mru6c-N75zZhlWUBoJOXFahrMYAMfAnS&export=download</pre>
+    </div>
+
+    <p class="text">Регулярные выражения для поиска инициалов ФИО в видах: <span class="comment">(вручную ставим неразрывный &amp;nbsp;)</span></p>
+    <div class="code">
+        <pre>И. О. Фамилия - \D\.\s\D\.\s
+И.О.Фамилия - \D\.\D\.</pre>
+    </div>
+
+    <p class="text">Удаление шрифта вручную из консоли:</span></p>
+    <div class="code">
+        <pre>** del /f /s /q /a "C:\Windows\fonts\my-font.ttf" <span class="comment">удаление шрифта вручную, после переустановки - всё работает</span></pre>
+    </div>
+
+</details>
+
+
+<script src="js/copyText.js"></script>
+</body>
+</html>
