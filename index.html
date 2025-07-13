@@ -133,85 +133,87 @@
 
     <details>
         <summary><span class="title">Текстовые расшифровки вместе с аудио на странице Проповеди по годам</span></summary>
-        <p class="text">Шаблон: аудио + видео + текст:</p>
+        <p class="text">Шаблон: ссылка + текст + видео + плеер:</p>
         <div class="code">
         <button type="button" class="copy-icon" onclick="copyText(this)">
             <img src="img/copy.svg" class="icon">
         </button>
-        <pre><span class="tag">&lt;!-- 22 мая--&gt;</span>
-<span class="tag">&lt;div</span> <span class="atn">style=</span><span class="atv">"text-align: justify"</span><span class="tag">&gt;</span>
-<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks-text-small-image"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;p&gt;&lt;a</span> <span class="atn">href=</span><span class="atv">"http://svlavra.church.ua/files/2016/05/Свт.-Николая-Чудотворца.-22-мая-2009-г.mp3"</span> <span class="atn">target=</span><span class="atv">"_blank"</span><span class="tag">&gt;</span>Проповедь епископа Арсения в день памяти свт. Николая Чудотворца (после Евангелия). 22.5.2009 г.<span class="tag">&lt;/a&gt;&lt;/p&gt;</span>
-<span class="tag">&lt;/div&gt;</span>
-<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks-small-image"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"/?page_id=62655"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Текст проповеди"</span> <span class="atn">src=</span><span class="atv">"/files/2016/05/text-plain-icon.png"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"30"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
+        <pre><span class="tag">&lt;!-- 22 мая --&gt;</span>
+<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block flex-between gap-10px"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block-text flex-start-centered"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p&gt;&lt;a</span> <span class="atn">href=</span><span class="atv">"http://svlavra.church.ua/files/2016/05/Свт.-Николая-Чудотворца.-22-мая-2009-г.mp3"</span> <span class="atn">target=</span><span class="atv">"_blank"</span><span class="tag">&gt;</span>Проповедь епископа Арсения в&nbsp;день памяти свт.&nbsp;Николая Чудотворца (после Евангелия). 22.5.2009&nbsp;г.<span class="tag">&lt;/a&gt;&lt;/p&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block-images flex-centered flex-wrap"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div&gt;</span>
+      <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"/?page_id=62655"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Текст проповеди"</span> <span class="atn">src=</span><span class="atv">"/files/2016/05/text-plain-icon.png"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"40"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
     <span class="tag">&lt;/div&gt;</span>
-    <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"https://youtu.be/82ZM_qytQxU"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Видеопроповедь"</span> <span class="atn">src=</span><span class="atv">"/files/2019/07/Youtube-square-red-radius-final-2.jpg"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"30"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
+    <span class="tag">&lt;div&gt;</span>
+      <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"https://youtu.be/82ZM_qytQxU"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Видео проповедь"</span> <span class="atn">src=</span><span class="atv">"/files/2019/07/Youtube-square-red-radius-final-2.jpg"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"40"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
     <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
 <span class="tag">&lt;/div&gt;</span>
-<span class="tag">&lt;/div&gt;</span>
-<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"audio-player"</span><span class="tag">&gt;</span>[audio mp3="http://svlavra.church.ua/files/2016/05/Свт.-Николая-Чудотворца.-22-мая-2009-г.mp3"][/audio]<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-audio-player"</span><span class="tag">&gt;</span>[audio mp3="http://svlavra.church.ua/files/2016/05/Свт.-Николая-Чудотворца.-22-мая-2009-г.mp3"][/audio]<span class="tag">&lt;/div&gt;</span>
         </pre>
         </div>
 
-<p class="text">Шаблон: аудио + текст:</p>
+<p class="text">Шаблон: ссылка + текст + плеер:</p>
 <div class="code">
   <button type="button" class="copy-icon" onclick="copyText(this)">
     <img src="img/copy.svg" class="icon">
   </button>
-  <pre><span class="tag">&lt;!-- 22 мая--&gt;</span>
-<span class="tag">&lt;div</span> <span class="atn">style=</span><span class="atv">"text-align: justify"</span><span class="tag">&gt;</span>
-  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks-text-small-image"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;p&gt;&lt;a</span> <span class="atn">href=</span><span class="atv">"http://svlavra.church.ua/files/2016/05/Свт.-Николая-Чудотворца.-22-мая-2009-г.mp3"</span> <span class="atn">target=</span><span class="atv">"_blank"</span><span class="tag">&gt;</span>Проповедь епископа Арсения в день памяти свт. Николая Чудотворца (после Евангелия). 22.5.2009 г.<span class="tag">&lt;/a&gt;&lt;/p&gt;</span>
+  <pre><span class="tag">&lt;!-- 22 мая --&gt;</span>
+<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block flex-between gap-10px"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block-text flex-start-centered"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p&gt;&lt;a</span> <span class="atn">href=</span><span class="atv">"http://svlavra.church.ua/files/2016/05/Свт.-Николая-Чудотворца.-22-мая-2009-г.mp3"</span> <span class="atn">target=</span><span class="atv">"_blank"</span><span class="tag">&gt;</span>Проповедь епископа Арсения в&nbsp;день памяти свт.&nbsp;Николая Чудотворца (после Евангелия). 22.5.2009&nbsp;г.<span class="tag">&lt;/a&gt;&lt;/p&gt;</span>
   <span class="tag">&lt;/div&gt;</span>
-  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks-small-image"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks"</span><span class="tag">&gt;</span>
-      <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"/?page_id=62655"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Текст проповеди"</span> <span class="atn">src=</span><span class="atv">"/files/2016/05/text-plain-icon.png"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"30"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
+  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block-images flex-centered flex-wrap"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div&gt;</span>
+      <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"/?page_id=62655"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Текст проповеди"</span> <span class="atn">src=</span><span class="atv">"/files/2016/05/text-plain-icon.png"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"40"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
     <span class="tag">&lt;/div&gt;</span>
   <span class="tag">&lt;/div&gt;</span>
 <span class="tag">&lt;/div&gt;</span>
-<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"audio-player"</span><span class="tag">&gt;</span>[audio mp3="http://svlavra.church.ua/files/2016/05/Свт.-Николая-Чудотворца.-22-мая-2009-г.mp3"][/audio]<span class="tag">&lt;/div&gt;</span>
-</pre>
+<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-audio-player"</span><span class="tag">&gt;</span>[audio mp3="http://svlavra.church.ua/files/2016/05/Свт.-Николая-Чудотворца.-22-мая-2009-г.mp3"][/audio]<span class="tag">&lt;/div&gt;</span>
+        </pre>
 </div>
 
 
-<p class="text">Шаблон: видео + текст:</p>
+<p class="text">Шаблон: ссылка-видео-YT + текст:</p>
 <div class="code">
   <button type="button" class="copy-icon" onclick="copyText(this)">
     <img src="img/copy.svg" class="icon">
   </button>
-  <pre><span class="tag">&lt;!-- 24 марта --&gt;</span><span class="tag">&lt;div</span> <span class="atn">style=</span><span class="atv">"text-align: justify"</span><span class="tag">&gt;</span>
-  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks-text-small-image"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;p&gt;&lt;a</span> <span class="atn">href=</span><span class="atv">"//www.youtube.com/watch?v=4CkherfQ-NA"</span> <span class="atn">target=</span><span class="atv">"_blank"</span><span class="tag">&gt;</span>Проводы Святогорской иконы в Ровенскую епархию и проповедь митрополита Арсения. 22.12.2017 г.<span class="tag">&lt;/a&gt;&lt;/p&gt;</span>
+  <pre><span class="tag">&lt;!-- 25 декабря --&gt;</span>
+<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block flex-between gap-10px"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block-text flex-start-centered"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p&gt;&lt;a</span> <span class="atn">href=</span><span class="atv">"https://www.youtube.com/watch?v=zC0oNpWWOBE&list=PL6JZVtO9RWcWzaiCgnoS-IIUq6qS7B1Js"</span> <span class="atn">target=</span><span class="atv">"_blank"</span><span class="tag">&gt;</span>Старый стиль или новый? Почему правильный юлианский календарь? Ответ свт.&nbsp;Спиридона. 25.12.22&nbsp;г.<span class="tag">&lt;/a&gt;&lt;/p&gt;</span>
   <span class="tag">&lt;/div&gt;</span>
-  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks-small-image"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks"</span><span class="tag">&gt;</span>
-      <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"/?page_id=27898"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Текст проповеди"</span> <span class="atn">src=</span><span class="atv">"/files/2016/05/text-plain-icon.png"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"30"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
+  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block-images flex-centered flex-wrap"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div&gt;</span>
+      <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"/?page_id=43830"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Текст проповеди"</span> <span class="atn">src=</span><span class="atv">"/files/2016/05/text-plain-icon.png"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"40"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
     <span class="tag">&lt;/div&gt;</span>
   <span class="tag">&lt;/div&gt;</span>
 <span class="tag">&lt;/div&gt;</span>
-</pre>
+    </pre>
 </div>
 
 
-<p class="text">Шаблон: текст:</p>
+<p class="text">Шаблон: название + текст:</p>
 <div class="code">
   <button type="button" class="copy-icon" onclick="copyText(this)">
     <img src="img/copy.svg" class="icon">
   </button>
-  <pre><span class="tag">&lt;!-- 24 марта --&gt;</span><span class="tag">&lt;div</span> <span class="atn">style=</span><span class="atv">"text-align: justify"</span><span class="tag">&gt;</span>
-  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks-text-small-image"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;p&gt;</span>Проповедь епископа Арсения в день памяти прп. Алеския, человека Божия. 30.5.2008 г.<span class="tag">&lt;/p&gt;</span>
+  <pre><span class="tag">&lt;!-- 25 декабря --&gt;</span>
+<span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block flex-between gap-10px"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block-text flex-start-centered"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Старый стиль или новый? Почему правильный юлианский календарь? Ответ свт.&nbsp;Спиридона. 25.12.22&nbsp;г.<span class="tag">&lt;/p&gt;</span>
   <span class="tag">&lt;/div&gt;</span>
-  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks-small-image"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"inline-blocks"</span><span class="tag">&gt;</span>
-      <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"/?page_id=16552"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Текст проповеди"</span> <span class="atn">src=</span><span class="atv">"/files/2016/05/text-plain-icon.png"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"30"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
+  <span class="tag">&lt;div</span> <span class="atn">class=</span><span class="atv">"propoved-block-images flex-centered flex-wrap"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div&gt;</span>
+      <span class="tag">&lt;a</span> <span class="atn">href=</span><span class="atv">"/?page_id=43830"</span><span class="tag">&gt;&lt;img</span> <span class="atn">title=</span><span class="atv">"Текст проповеди"</span> <span class="atn">src=</span><span class="atv">"/files/2016/05/text-plain-icon.png"</span> <span class="atn">alt=</span><span class="atv">""</span> <span class="atn">width=</span><span class="atv">"40"</span> <span class="atn">height=</span><span class="atv">"40"</span> <span class="atn">border=</span><span class="atv">"0"</span> <span class="tag">/&gt;&lt;/a&gt;</span>
     <span class="tag">&lt;/div&gt;</span>
   <span class="tag">&lt;/div&gt;</span>
 <span class="tag">&lt;/div&gt;</span>
-</pre>
+    </pre>
 </div>
 
 
